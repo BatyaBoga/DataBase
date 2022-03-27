@@ -224,8 +224,19 @@ namespace Лаб_3_БД_
             checkBox1.Text = checkBox1.Checked == true ? "Filter ON" : "Filter OFF";
         }
 
+        private void filterCheck(ref string filter)
+        {
+            if (filter != "")
+            {
+                filter += " AND ";
+
+            }
+
+        }
         private void checkBox1_CheckStateChanged(object sender, EventArgs e)
         {
+            string filter = "";
+            підприємстваBindingSource.Filter = "";
             if (checkBox1.Checked == true)
             {
                 if (checkedListBox1.CheckedItems.Count == 0)
@@ -236,35 +247,35 @@ namespace Лаб_3_БД_
                 }
                 else
                 {
-
-                    switch (checkedListBox1.SelectedIndex)
+                    foreach (int i in checkedListBox1.CheckedIndices)
                     {
-                        case 0: підприємстваBindingSource.Filter = "[Назва] like '%" + textBox17.Text + "%' "; break;
-                        case 1:
-                            if (підприємстваBindingSource.Filter != null)
-                            {
-                                підприємстваBindingSource.Filter += "and";
-                            }
-                            підприємстваBindingSource.Filter = "[Керівник] = " + comboBox1.SelectedValue.ToString();
-
-                            break;
-                        case 2: break;
-                        case 3: break;
-                        case 4: break;
-                            //    if (підприємстваBindingSource.Filter != null)
-                            //    {
-                            //        підприємстваBindingSource.Filter += "and";
-                            //    }
-                            //підприємстваBindingSource.Filter += "[Рік заснування] <" + dateTimePicker1.Value; break;
-                            // dateTimePicker1.Value.;
+                        switch (i)
+                        {
+                            case 0: filter = "[Назва] like '%" + textBox17.Text + "%' "; break;
+                            case 1: filterCheck(ref filter); filter += "[Керівник] like '%" + comboBox1.SelectedValue.ToString() + "%' "; break;
+                            case 2: filterCheck(ref filter); filter += "[Форма власності] like '%" + comboBox5.SelectedItem.ToString() + "%' "; break;
+                            case 3: filterCheck(ref filter);  filter += "[Тип підприємства] like '%" + comboBox6.SelectedValue.ToString() + "%' "; break;
+                            case 4: filterCheck(ref filter);
+                                filter += "([Рік заснування] >= '" + dateTimePicker1.Text + "') AND ([Рік заснування] <= '" + dateTimePicker2.Text + "')";
+                                break; 
+                        }
+                        
                     }
+                    підприємстваBindingSource.Filter = filter;
 
-
+                    if(підприємстваDataGridView.Rows.Count == 1)
+                    {
+                        MessageBox.Show("Елменти не знайдені");
+                        підприємстваBindingSource.Filter = "";
+                        checkBox1.Checked = false;
+                    }
                 }
+               
             }
             else
             {
                 підприємстваBindingSource.Filter = "";
+                
             }
         }
     }

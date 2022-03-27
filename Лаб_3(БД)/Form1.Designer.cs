@@ -138,21 +138,22 @@
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.підприємстваДіяльностіПідприємстваBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.каталог_підприємствDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.підприємстваBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.підприємстваBindingNavigator)).BeginInit();
@@ -172,6 +173,7 @@
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.підприємстваДіяльностіПідприємстваBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // каталог_підприємствDataSet
@@ -220,14 +222,14 @@
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
             this.підприємстваBindingNavigatorSaveItem});
-            this.підприємстваBindingNavigator.Location = new System.Drawing.Point(0, 26);
+            this.підприємстваBindingNavigator.Location = new System.Drawing.Point(0, 25);
             this.підприємстваBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.підприємстваBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.підприємстваBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.підприємстваBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.підприємстваBindingNavigator.Name = "підприємстваBindingNavigator";
             this.підприємстваBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.підприємстваBindingNavigator.Size = new System.Drawing.Size(1280, 28);
+            this.підприємстваBindingNavigator.Size = new System.Drawing.Size(1280, 25);
             this.підприємстваBindingNavigator.TabIndex = 0;
             this.підприємстваBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -237,7 +239,7 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(25, 25);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(25, 22);
             this.bindingNavigatorAddNewItem.Text = "Добавить";
             // 
             // bindingNavigatorCountItem
@@ -451,7 +453,7 @@
             this.видДіяльностіToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1280, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(1280, 25);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -1133,13 +1135,13 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.comboBox5);
             this.groupBox6.Controls.Add(this.label26);
             this.groupBox6.Controls.Add(this.label25);
             this.groupBox6.Controls.Add(this.label23);
             this.groupBox6.Controls.Add(this.label2);
             this.groupBox6.Controls.Add(this.groupBox7);
             this.groupBox6.Controls.Add(this.comboBox6);
-            this.groupBox6.Controls.Add(this.comboBox5);
             this.groupBox6.Controls.Add(this.comboBox1);
             this.groupBox6.Controls.Add(this.checkBox1);
             this.groupBox6.Controls.Add(this.checkedListBox1);
@@ -1151,12 +1153,126 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Filter";
             // 
-            // textBox17
+            // label26
             // 
-            this.textBox17.Location = new System.Drawing.Point(9, 32);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(149, 20);
-            this.textBox17.TabIndex = 0;
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(9, 135);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(98, 13);
+            this.label26.TabIndex = 10;
+            this.label26.Text = "Тип підприємства";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(9, 95);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(96, 13);
+            this.label25.TabIndex = 9;
+            this.label25.Text = "Форма власності";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(9, 55);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(52, 13);
+            this.label23.TabIndex = 8;
+            this.label23.Text = "Керівник";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(9, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(39, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Назва";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.dateTimePicker2);
+            this.groupBox7.Controls.Add(this.dateTimePicker1);
+            this.groupBox7.Controls.Add(this.label28);
+            this.groupBox7.Controls.Add(this.label27);
+            this.groupBox7.Location = new System.Drawing.Point(205, 16);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(140, 113);
+            this.groupBox7.TabIndex = 6;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Рік заснування";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(7, 79);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(117, 20);
+            this.dateTimePicker2.TabIndex = 3;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(9, 35);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(115, 20);
+            this.dateTimePicker1.TabIndex = 2;
+            this.dateTimePicker1.Value = new System.DateTime(2000, 2, 2, 0, 0, 0, 0);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(6, 61);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(22, 13);
+            this.label28.TabIndex = 1;
+            this.label28.Text = "До";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(6, 19);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(22, 13);
+            this.label27.TabIndex = 0;
+            this.label27.Text = "Від";
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.підприємстваBindingSource, "Тип підприємства", true));
+            this.comboBox6.DataSource = this.типПідприємстваBindingSource;
+            this.comboBox6.DisplayMember = "Назва";
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(9, 152);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(149, 21);
+            this.comboBox6.TabIndex = 5;
+            this.comboBox6.ValueMember = "Код";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.підприємстваBindingSource, "Керівник", true));
+            this.comboBox1.DataSource = this.керівникиBindingSource;
+            this.comboBox1.DisplayMember = "ПІП";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(9, 71);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(149, 21);
+            this.comboBox1.TabIndex = 3;
+            this.comboBox1.ValueMember = "Код";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox1.Location = new System.Drawing.Point(218, 135);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(114, 38);
+            this.checkBox1.TabIndex = 2;
+            this.checkBox1.Text = "Filter OFF";
+            this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkBox1.CheckStateChanged += new System.EventHandler(this.checkBox1_CheckStateChanged);
             // 
             // checkedListBox1
             // 
@@ -1172,125 +1288,31 @@
             this.checkedListBox1.Size = new System.Drawing.Size(157, 154);
             this.checkedListBox1.TabIndex = 1;
             // 
-            // checkBox1
+            // textBox17
             // 
-            this.checkBox1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox1.Location = new System.Drawing.Point(218, 135);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(114, 38);
-            this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = "Filter OFF";
-            this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            this.checkBox1.CheckStateChanged += new System.EventHandler(this.checkBox1_CheckStateChanged);
+            this.textBox17.Location = new System.Drawing.Point(9, 32);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(149, 20);
+            this.textBox17.TabIndex = 0;
             // 
-            // comboBox1
+            // підприємстваДіяльностіПідприємстваBindingSource1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(9, 71);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(149, 21);
-            this.comboBox1.TabIndex = 3;
+            this.підприємстваДіяльностіПідприємстваBindingSource1.DataMember = "ПідприємстваДіяльності підприємства";
+            this.підприємстваДіяльностіПідприємстваBindingSource1.DataSource = this.підприємстваBindingSource;
             // 
             // comboBox5
             // 
+            this.comboBox5.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.підприємстваBindingSource, "Керівник", true));
             this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "Приватна",
+            "Державана",
+            "Суспільна",
+            "Колективна"});
             this.comboBox5.Location = new System.Drawing.Point(9, 111);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(149, 21);
-            this.comboBox5.TabIndex = 4;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(9, 152);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(149, 21);
-            this.comboBox6.TabIndex = 5;
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.dateTimePicker2);
-            this.groupBox7.Controls.Add(this.dateTimePicker1);
-            this.groupBox7.Controls.Add(this.label28);
-            this.groupBox7.Controls.Add(this.label27);
-            this.groupBox7.Location = new System.Drawing.Point(205, 16);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(140, 113);
-            this.groupBox7.TabIndex = 6;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Рік заснування";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Назва";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(9, 55);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(52, 13);
-            this.label23.TabIndex = 8;
-            this.label23.Text = "Керівник";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(9, 95);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(96, 13);
-            this.label25.TabIndex = 9;
-            this.label25.Text = "Форма власності";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(9, 135);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(98, 13);
-            this.label26.TabIndex = 10;
-            this.label26.Text = "Тип підприємства";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(6, 19);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(22, 13);
-            this.label27.TabIndex = 0;
-            this.label27.Text = "Від";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(6, 61);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(22, 13);
-            this.label28.TabIndex = 1;
-            this.label28.Text = "До";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(9, 35);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(115, 20);
-            this.dateTimePicker1.TabIndex = 2;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(7, 79);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(117, 20);
-            this.dateTimePicker2.TabIndex = 3;
+            this.comboBox5.TabIndex = 11;
             // 
             // fEnterprises
             // 
@@ -1339,6 +1361,7 @@
             this.groupBox6.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.підприємстваДіяльностіПідприємстваBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1464,11 +1487,12 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.BindingSource підприємстваДіяльностіПідприємстваBindingSource1;
+        private System.Windows.Forms.ComboBox comboBox5;
     }
 }
 
