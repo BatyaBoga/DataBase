@@ -22,6 +22,7 @@ namespace Лаб_3_БД_
             this.Validate();
             this.підприємстваBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.каталог_підприємствDataSet);
+            this.підприємстваTableAdapter.Fill(this.каталог_підприємствDataSet.Підприємства); 
 
         }
 
@@ -38,6 +39,41 @@ namespace Лаб_3_БД_
             // TODO: данная строка кода позволяет загрузить данные в таблицу "каталог_підприємствDataSet.Підприємства". При необходимости она может быть перемещена или удалена.
             this.підприємстваTableAdapter.Fill(this.каталог_підприємствDataSet.Підприємства);
             showData();
+
+            comboBox7.Items.Clear();
+            comboBox8.Items.Clear();
+            comboBox9.Items.Clear();    
+
+
+
+            for (int i = 0; i < каталог_підприємствDataSet.Населені_пункти.Rows.Count; i++)
+            {
+                comboBox7.Items.Add(каталог_підприємствDataSet.Населені_пункти.Rows[i][1]);
+            }
+
+            for (int i = 0; i < каталог_підприємствDataSet.Керівники.Rows.Count; i++)
+            {
+                comboBox8.Items.Add(каталог_підприємствDataSet.Керівники.Rows[i][1]);
+            }
+            for (int i = 0; i < каталог_підприємствDataSet.Тип_підприємства.Rows.Count; i++)
+            {
+                comboBox9.Items.Add(каталог_підприємствDataSet.Тип_підприємства.Rows[i][1]);
+            }
+
+            var dr_kp = каталог_підприємствDataSet.Підприємства.Rows[0];
+
+            var dr_np = каталог_підприємствDataSet.Населені_пункти.Select("[Код] = '" + dr_kp[3].ToString()+"'");
+            comboBox7.SelectedIndex = comboBox7.FindString(dr_np[0][1].ToString());
+
+            var dr_kerivnuk = каталог_підприємствDataSet.Керівники.Select("[Код] = '" + dr_kp[5].ToString() + "'");
+            comboBox8.SelectedIndex = comboBox8.FindString(dr_kerivnuk[0][1].ToString());
+
+            var dr_tippdriy = каталог_підприємствDataSet.Тип_підприємства.Select("[Код] = '" + dr_kp[10].ToString() + "'");
+            comboBox9.SelectedIndex = comboBox9.FindString(dr_tippdriy[0][1].ToString());
+
+
+
+
         }
 
         private void showData()
@@ -50,14 +86,22 @@ namespace Лаб_3_БД_
                 maskedTextBox4.Text = dr[0].ToString();
                 textBox10.Text = dr[1].ToString();
                 richTextBox2.Text = dr[2].ToString();
-                textBox11.Text = dr[3].ToString();
                 textBox9.Text = dr[4].ToString();
-                textBox12.Text = dr[5].ToString();
                 textBox8.Text = dr[6].ToString();
                 textBox7.Text = dr[7].ToString();
                 maskedTextBox3.Text = dr[8].ToString();
                 textBox6.Text = dr[9].ToString();
-                textBox13.Text = dr[10].ToString();
+
+                
+                var dr_np = каталог_підприємствDataSet.Населені_пункти.Select("[Код] = '" + dr[3].ToString() + "'");
+                comboBox7.SelectedIndex = comboBox7.FindString(dr_np[0][1].ToString());
+
+                var dr_kerivnuk = каталог_підприємствDataSet.Керівники.Select("[Код] = '" + dr[5].ToString() + "'");
+                comboBox8.SelectedIndex = comboBox8.FindString(dr_kerivnuk[0][1].ToString());
+
+                var dr_tippdriy = каталог_підприємствDataSet.Тип_підприємства.Select("[Код] = '" + dr[10].ToString() + "'");
+                comboBox9.SelectedIndex = comboBox9.FindString(dr_tippdriy[0][1].ToString());
+
 
             }
             catch (Exception ex)
@@ -140,18 +184,24 @@ namespace Лаб_3_БД_
             {
 
                 DataRow dr = каталог_підприємствDataSet.Tables["Підприємства"].NewRow();
+                DataRow[] dr_np = каталог_підприємствDataSet.Населені_пункти.Select("[Назва] = '" + comboBox7.SelectedItem.ToString() + "'");
+                DataRow[] dr_kerivnuk = каталог_підприємствDataSet.Керівники.Select("[ПІП] = '" + comboBox8.SelectedItem.ToString() + "'");
+                DataRow[] dr_tippdriy = каталог_підприємствDataSet.Тип_підприємства.Select("[Назва] = '" + comboBox9.SelectedItem.ToString() + "'");
 
                 dr[0]= maskedTextBox4.Text;
                 dr[1] = textBox10.Text ;
                 dr[2] = richTextBox2.Text;
-                dr[3] = textBox11.Text;
+                dr[3] = dr_np[0][0];
                 dr[4] = textBox9.Text;
-                dr[5] = textBox12.Text;
+                dr[5] = dr_kerivnuk[0][0];
                 dr[6] = textBox8.Text;
                 dr[7] = textBox7.Text;
                 dr[8] = maskedTextBox3.Text;
                 dr[9] = textBox6.Text;
-                dr[10] = textBox13.Text;
+                dr[10] = dr_tippdriy[0][0];
+
+
+                підприємстваBindingNavigatorSaveItem_Click(sender, e);
 
                 каталог_підприємствDataSet.Tables["Підприємства"].Rows.Add(dr);
 
@@ -166,22 +216,29 @@ namespace Лаб_3_БД_
         {
             try
             {
-
+               // var j = підприємстваDataGridView.CurrentCellAddress;
+                
                 DataRow dr = каталог_підприємствDataSet.Tables["Підприємства"].Rows[підприємстваBindingSource.Position];
+                DataRow[] dr_np = каталог_підприємствDataSet.Населені_пункти.Select("[Назва] = '" + comboBox7.SelectedItem.ToString() + "'");
+                DataRow[] dr_kerivnuk = каталог_підприємствDataSet.Керівники.Select("[ПІП] = '" + comboBox8.SelectedItem.ToString() + "'");
+                DataRow[] dr_tippdriy = каталог_підприємствDataSet.Тип_підприємства.Select("[Назва] = '" + comboBox9.SelectedItem.ToString() + "'");
 
                 dr[0] = maskedTextBox4.Text;
                 dr[1] = textBox10.Text;
                 dr[2] = richTextBox2.Text;
-                dr[3] = textBox11.Text;
+                dr[3] = dr_np[0][0];
                 dr[4] = textBox9.Text;
-                dr[5] = textBox12.Text;
+                dr[5] = dr_kerivnuk[0][0];
                 dr[6] = textBox8.Text;
                 dr[7] = textBox7.Text;
                 dr[8] = maskedTextBox3.Text;
                 dr[9] = textBox6.Text;
-                dr[10] = textBox13.Text;
+                dr[10] = dr_tippdriy[0][0];
 
 
+                підприємстваBindingNavigatorSaveItem_Click(sender, e);
+               
+               // this.підприємстваDataGridView.CurrentCell= підприємстваDataGridView[j.X, j.Y]; ;
             }
             catch (Exception ex)
             {
@@ -236,7 +293,9 @@ namespace Лаб_3_БД_
         private void checkBox1_CheckStateChanged(object sender, EventArgs e)
         {
             string filter = "";
+
             підприємстваBindingSource.Filter = "";
+
             if (checkBox1.Checked == true)
             {
                 if (checkedListBox1.CheckedItems.Count == 0)
@@ -277,6 +336,36 @@ namespace Лаб_3_БД_
                 підприємстваBindingSource.Filter = "";
                 
             }
+        }
+
+       private void chenge_inform(object sender, EventArgs e, string name, object ds)
+        {
+            Information fChoice = new Information();
+            DataRow dr = каталог_підприємствDataSet.Tables["Підприємства"].Rows[підприємстваBindingSource.Position];
+            fChoice.dataGridView1.DataSource = ds;
+
+            if (fChoice.ShowDialog() == DialogResult.OK)
+            {
+                var code_pr = fChoice.dataGridView1.CurrentRow.Cells[0].Value;
+                dr[name] = code_pr;
+                підприємстваBindingNavigatorSaveItem_Click(sender, e);
+                showData();
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            chenge_inform(sender, e, "Населений пункт", каталог_підприємствDataSet.Населені_пункти);
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            chenge_inform(sender, e, "Керівник", каталог_підприємствDataSet.Керівники);
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            chenge_inform(sender, e, "Тип підприємства", каталог_підприємствDataSet.Тип_підприємства);
         }
     }
 }

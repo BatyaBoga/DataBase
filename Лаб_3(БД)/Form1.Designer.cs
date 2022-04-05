@@ -48,17 +48,20 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.підприємстваBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.підприємстваDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.єДРПОУDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.назваDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.контактиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.населенийПунктDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.розташуванняDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.адресаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.керівникDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.пІПКерівникаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.посадаКерівникаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.головнийБухгалтерDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.рікЗаснуванняDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.формаВласностіDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.типПідприємстваDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.типпідприємстваDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.керівникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.населеніПунктиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -93,14 +96,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -138,6 +144,7 @@
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -153,7 +160,6 @@
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.підприємстваДіяльностіПідприємстваBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.каталог_підприємствDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.підприємстваBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.підприємстваBindingNavigator)).BeginInit();
@@ -335,17 +341,20 @@
             this.підприємстваDataGridView.AutoGenerateColumns = false;
             this.підприємстваDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.підприємстваDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11});
+            this.єДРПОУDataGridViewTextBoxColumn,
+            this.назваDataGridViewTextBoxColumn,
+            this.контактиDataGridViewTextBoxColumn,
+            this.населенийПунктDataGridViewTextBoxColumn,
+            this.розташуванняDataGridViewTextBoxColumn,
+            this.адресаDataGridViewTextBoxColumn,
+            this.керівникDataGridViewTextBoxColumn,
+            this.пІПКерівникаDataGridViewTextBoxColumn,
+            this.посадаКерівникаDataGridViewTextBoxColumn,
+            this.головнийБухгалтерDataGridViewTextBoxColumn,
+            this.рікЗаснуванняDataGridViewTextBoxColumn,
+            this.формаВласностіDataGridViewTextBoxColumn,
+            this.типПідприємстваDataGridViewTextBoxColumn,
+            this.типпідприємстваDataGridViewTextBoxColumn1});
             this.підприємстваDataGridView.DataSource = this.підприємстваBindingSource;
             this.підприємстваDataGridView.Location = new System.Drawing.Point(0, 52);
             this.підприємстваDataGridView.Name = "підприємстваDataGridView";
@@ -354,93 +363,120 @@
             this.підприємстваDataGridView.TabIndex = 1;
             this.підприємстваDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.підприємстваDataGridView_CellClick);
             // 
-            // dataGridViewTextBoxColumn1
+            // єДРПОУDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "ЄДРПОУ";
-            this.dataGridViewTextBoxColumn1.HeaderText = "ЄДРПОУ";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 110;
+            this.єДРПОУDataGridViewTextBoxColumn.DataPropertyName = "ЄДРПОУ";
+            this.єДРПОУDataGridViewTextBoxColumn.HeaderText = "ЄДРПОУ";
+            this.єДРПОУDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.єДРПОУDataGridViewTextBoxColumn.Name = "єДРПОУDataGridViewTextBoxColumn";
+            this.єДРПОУDataGridViewTextBoxColumn.Width = 110;
             // 
-            // dataGridViewTextBoxColumn2
+            // назваDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Назва";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Назва";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 110;
+            this.назваDataGridViewTextBoxColumn.DataPropertyName = "Назва";
+            this.назваDataGridViewTextBoxColumn.HeaderText = "Назва";
+            this.назваDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.назваDataGridViewTextBoxColumn.Name = "назваDataGridViewTextBoxColumn";
+            this.назваDataGridViewTextBoxColumn.Width = 110;
             // 
-            // dataGridViewTextBoxColumn3
+            // контактиDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Контакти";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Контакти";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 110;
+            this.контактиDataGridViewTextBoxColumn.DataPropertyName = "Контакти";
+            this.контактиDataGridViewTextBoxColumn.HeaderText = "Контакти";
+            this.контактиDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.контактиDataGridViewTextBoxColumn.Name = "контактиDataGridViewTextBoxColumn";
+            this.контактиDataGridViewTextBoxColumn.Width = 110;
             // 
-            // dataGridViewTextBoxColumn4
+            // населенийПунктDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Населений пункт";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Населений пункт";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 110;
+            this.населенийПунктDataGridViewTextBoxColumn.DataPropertyName = "Населений пункт";
+            this.населенийПунктDataGridViewTextBoxColumn.HeaderText = "Населений пункт";
+            this.населенийПунктDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.населенийПунктDataGridViewTextBoxColumn.Name = "населенийПунктDataGridViewTextBoxColumn";
+            this.населенийПунктDataGridViewTextBoxColumn.Visible = false;
+            this.населенийПунктDataGridViewTextBoxColumn.Width = 110;
             // 
-            // dataGridViewTextBoxColumn5
+            // розташуванняDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Адреса";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Адреса";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 110;
+            this.розташуванняDataGridViewTextBoxColumn.DataPropertyName = "Розташування";
+            this.розташуванняDataGridViewTextBoxColumn.HeaderText = "Розташування";
+            this.розташуванняDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.розташуванняDataGridViewTextBoxColumn.Name = "розташуванняDataGridViewTextBoxColumn";
+            this.розташуванняDataGridViewTextBoxColumn.Width = 110;
             // 
-            // dataGridViewTextBoxColumn6
+            // адресаDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Керівник";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Керівник";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 110;
+            this.адресаDataGridViewTextBoxColumn.DataPropertyName = "Адреса";
+            this.адресаDataGridViewTextBoxColumn.HeaderText = "Адреса";
+            this.адресаDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.адресаDataGridViewTextBoxColumn.Name = "адресаDataGridViewTextBoxColumn";
+            this.адресаDataGridViewTextBoxColumn.Width = 110;
             // 
-            // dataGridViewTextBoxColumn7
+            // керівникDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Посада керівника";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Посада керівника";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 110;
+            this.керівникDataGridViewTextBoxColumn.DataPropertyName = "Керівник";
+            this.керівникDataGridViewTextBoxColumn.HeaderText = "Керівник";
+            this.керівникDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.керівникDataGridViewTextBoxColumn.Name = "керівникDataGridViewTextBoxColumn";
+            this.керівникDataGridViewTextBoxColumn.Visible = false;
+            this.керівникDataGridViewTextBoxColumn.Width = 110;
             // 
-            // dataGridViewTextBoxColumn8
+            // пІПКерівникаDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Головний бухгалтер";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Головний бухгалтер";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 110;
+            this.пІПКерівникаDataGridViewTextBoxColumn.DataPropertyName = "ПІП Керівника";
+            this.пІПКерівникаDataGridViewTextBoxColumn.HeaderText = "ПІП Керівника";
+            this.пІПКерівникаDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.пІПКерівникаDataGridViewTextBoxColumn.Name = "пІПКерівникаDataGridViewTextBoxColumn";
+            this.пІПКерівникаDataGridViewTextBoxColumn.Width = 110;
             // 
-            // dataGridViewTextBoxColumn9
+            // посадаКерівникаDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "Рік заснування";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Рік заснування";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 110;
+            this.посадаКерівникаDataGridViewTextBoxColumn.DataPropertyName = "Посада керівника";
+            this.посадаКерівникаDataGridViewTextBoxColumn.HeaderText = "Посада керівника";
+            this.посадаКерівникаDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.посадаКерівникаDataGridViewTextBoxColumn.Name = "посадаКерівникаDataGridViewTextBoxColumn";
+            this.посадаКерівникаDataGridViewTextBoxColumn.Width = 110;
             // 
-            // dataGridViewTextBoxColumn10
+            // головнийБухгалтерDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "Форма власності";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Форма власності";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Width = 110;
+            this.головнийБухгалтерDataGridViewTextBoxColumn.DataPropertyName = "Головний бухгалтер";
+            this.головнийБухгалтерDataGridViewTextBoxColumn.HeaderText = "Головний бухгалтер";
+            this.головнийБухгалтерDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.головнийБухгалтерDataGridViewTextBoxColumn.Name = "головнийБухгалтерDataGridViewTextBoxColumn";
+            this.головнийБухгалтерDataGridViewTextBoxColumn.Width = 110;
             // 
-            // dataGridViewTextBoxColumn11
+            // рікЗаснуванняDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "Тип підприємства";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Тип підприємства";
-            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Width = 110;
+            this.рікЗаснуванняDataGridViewTextBoxColumn.DataPropertyName = "Рік заснування";
+            this.рікЗаснуванняDataGridViewTextBoxColumn.HeaderText = "Рік заснування";
+            this.рікЗаснуванняDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.рікЗаснуванняDataGridViewTextBoxColumn.Name = "рікЗаснуванняDataGridViewTextBoxColumn";
+            this.рікЗаснуванняDataGridViewTextBoxColumn.Width = 110;
+            // 
+            // формаВласностіDataGridViewTextBoxColumn
+            // 
+            this.формаВласностіDataGridViewTextBoxColumn.DataPropertyName = "Форма власності";
+            this.формаВласностіDataGridViewTextBoxColumn.HeaderText = "Форма власності";
+            this.формаВласностіDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.формаВласностіDataGridViewTextBoxColumn.Name = "формаВласностіDataGridViewTextBoxColumn";
+            this.формаВласностіDataGridViewTextBoxColumn.Width = 110;
+            // 
+            // типПідприємстваDataGridViewTextBoxColumn
+            // 
+            this.типПідприємстваDataGridViewTextBoxColumn.DataPropertyName = "Тип підприємства";
+            this.типПідприємстваDataGridViewTextBoxColumn.HeaderText = "Тип підприємства";
+            this.типПідприємстваDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.типПідприємстваDataGridViewTextBoxColumn.Name = "типПідприємстваDataGridViewTextBoxColumn";
+            this.типПідприємстваDataGridViewTextBoxColumn.Visible = false;
+            this.типПідприємстваDataGridViewTextBoxColumn.Width = 110;
+            // 
+            // типпідприємстваDataGridViewTextBoxColumn1
+            // 
+            this.типпідприємстваDataGridViewTextBoxColumn1.DataPropertyName = "Тип_підприємства";
+            this.типпідприємстваDataGridViewTextBoxColumn1.HeaderText = "Тип_підприємства";
+            this.типпідприємстваDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.типпідприємстваDataGridViewTextBoxColumn1.Name = "типпідприємстваDataGridViewTextBoxColumn1";
+            this.типпідприємстваDataGridViewTextBoxColumn1.Width = 110;
             // 
             // menuStrip1
             // 
@@ -745,14 +781,17 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.groupBox2.Controls.Add(this.button11);
+            this.groupBox2.Controls.Add(this.button10);
+            this.groupBox2.Controls.Add(this.button9);
+            this.groupBox2.Controls.Add(this.comboBox9);
+            this.groupBox2.Controls.Add(this.comboBox8);
+            this.groupBox2.Controls.Add(this.comboBox7);
             this.groupBox2.Controls.Add(this.button5);
             this.groupBox2.Controls.Add(this.button4);
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.textBox13);
-            this.groupBox2.Controls.Add(this.textBox12);
-            this.groupBox2.Controls.Add(this.textBox11);
             this.groupBox2.Controls.Add(this.richTextBox2);
             this.groupBox2.Controls.Add(this.maskedTextBox3);
             this.groupBox2.Controls.Add(this.textBox6);
@@ -778,6 +817,60 @@
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Manual";
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(525, 153);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(25, 21);
+            this.button11.TabIndex = 38;
+            this.button11.Text = "...";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(255, 228);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(25, 21);
+            this.button10.TabIndex = 37;
+            this.button10.Text = "...";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(250, 163);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(25, 21);
+            this.button9.TabIndex = 36;
+            this.button9.Text = "...";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // comboBox9
+            // 
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Location = new System.Drawing.Point(380, 154);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(139, 21);
+            this.comboBox9.TabIndex = 35;
+            // 
+            // comboBox8
+            // 
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Location = new System.Drawing.Point(62, 228);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(192, 21);
+            this.comboBox8.TabIndex = 34;
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.DisplayMember = "0";
+            this.comboBox7.Location = new System.Drawing.Point(90, 163);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(159, 21);
+            this.comboBox7.TabIndex = 33;
             // 
             // button5
             // 
@@ -828,27 +921,6 @@
             this.button1.Text = "<";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(376, 151);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(168, 20);
-            this.textBox13.TabIndex = 27;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(56, 228);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(219, 20);
-            this.textBox12.TabIndex = 26;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(90, 158);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(187, 20);
-            this.textBox11.TabIndex = 25;
             // 
             // richTextBox2
             // 
@@ -1153,6 +1225,20 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Filter";
             // 
+            // comboBox5
+            // 
+            this.comboBox5.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.підприємстваBindingSource, "Керівник", true));
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "Приватна",
+            "Державана",
+            "Суспільна",
+            "Колективна"});
+            this.comboBox5.Location = new System.Drawing.Point(9, 111);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(149, 21);
+            this.comboBox5.TabIndex = 11;
+            // 
             // label26
             // 
             this.label26.AutoSize = true;
@@ -1300,20 +1386,6 @@
             this.підприємстваДіяльностіПідприємстваBindingSource1.DataMember = "ПідприємстваДіяльності підприємства";
             this.підприємстваДіяльностіПідприємстваBindingSource1.DataSource = this.підприємстваBindingSource;
             // 
-            // comboBox5
-            // 
-            this.comboBox5.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.підприємстваBindingSource, "Керівник", true));
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            "Приватна",
-            "Державана",
-            "Суспільна",
-            "Колективна"});
-            this.comboBox5.Location = new System.Drawing.Point(9, 111);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(149, 21);
-            this.comboBox5.TabIndex = 11;
-            // 
             // fEnterprises
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1387,17 +1459,6 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton підприємстваBindingNavigatorSaveItem;
         private System.Windows.Forms.DataGridView підприємстваDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem керівникиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem населеніПунктиToolStripMenuItem;
@@ -1463,9 +1524,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
@@ -1493,6 +1551,26 @@
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.BindingSource підприємстваДіяльностіПідприємстваBindingSource1;
         private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn єДРПОУDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn назваDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn контактиDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn населенийПунктDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn розташуванняDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn адресаDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn керівникDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn пІПКерівникаDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn посадаКерівникаDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn головнийБухгалтерDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn рікЗаснуванняDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn формаВласностіDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn типПідприємстваDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn типпідприємстваDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox comboBox7;
     }
 }
 
