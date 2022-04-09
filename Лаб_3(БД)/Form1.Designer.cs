@@ -105,8 +105,6 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -126,6 +124,8 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.підприємстваДіяльностіПідприємстваBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.діяльності_підприємстваTableAdapter = new Лаб_3_БД_.Каталог_підприємствDataSetTableAdapters.Діяльності_підприємстваTableAdapter();
             this.підприємстваBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -160,6 +160,10 @@
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.підприємстваДіяльностіПідприємстваBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.вхідToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.каталог_підприємствDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.підприємстваBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.підприємстваBindingNavigator)).BeginInit();
@@ -180,6 +184,7 @@
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.підприємстваДіяльностіПідприємстваBindingSource1)).BeginInit();
+            this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // каталог_підприємствDataSet
@@ -214,6 +219,7 @@
             this.підприємстваBindingNavigator.BindingSource = this.підприємстваBindingSource;
             this.підприємстваBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.підприємстваBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.підприємстваBindingNavigator.Enabled = false;
             this.підприємстваBindingNavigator.ImageScalingSize = new System.Drawing.Size(18, 18);
             this.підприємстваBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
@@ -356,10 +362,11 @@
             this.типПідприємстваDataGridViewTextBoxColumn,
             this.типпідприємстваDataGridViewTextBoxColumn1});
             this.підприємстваDataGridView.DataSource = this.підприємстваBindingSource;
+            this.підприємстваDataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.підприємстваDataGridView.Location = new System.Drawing.Point(0, 52);
             this.підприємстваDataGridView.Name = "підприємстваDataGridView";
             this.підприємстваDataGridView.RowHeadersWidth = 45;
-            this.підприємстваDataGridView.Size = new System.Drawing.Size(718, 531);
+            this.підприємстваDataGridView.Size = new System.Drawing.Size(718, 484);
             this.підприємстваDataGridView.TabIndex = 1;
             this.підприємстваDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.підприємстваDataGridView_CellClick);
             // 
@@ -480,6 +487,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Enabled = false;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(18, 18);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.керівникиToolStripMenuItem,
@@ -553,6 +561,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.maskedTextBox1);
+            this.groupBox1.Enabled = false;
             this.groupBox1.Location = new System.Drawing.Point(724, 52);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(556, 256);
@@ -790,8 +799,6 @@
             this.groupBox2.Controls.Add(this.button5);
             this.groupBox2.Controls.Add(this.button4);
             this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.richTextBox2);
             this.groupBox2.Controls.Add(this.maskedTextBox3);
             this.groupBox2.Controls.Add(this.textBox6);
@@ -811,6 +818,7 @@
             this.groupBox2.Controls.Add(this.label22);
             this.groupBox2.Controls.Add(this.label24);
             this.groupBox2.Controls.Add(this.maskedTextBox4);
+            this.groupBox2.Enabled = false;
             this.groupBox2.Location = new System.Drawing.Point(724, 314);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(556, 269);
@@ -901,26 +909,6 @@
             this.button3.Text = "Add";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(513, 228);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(31, 23);
-            this.button2.TabIndex = 29;
-            this.button2.Text = ">";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(476, 228);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(31, 23);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "<";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // richTextBox2
             // 
@@ -1081,6 +1069,26 @@
             this.maskedTextBox4.Size = new System.Drawing.Size(100, 20);
             this.maskedTextBox4.TabIndex = 1;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(361, 542);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(357, 23);
+            this.button2.TabIndex = 29;
+            this.button2.Text = ">";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(0, 542);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(355, 23);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "<";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // підприємстваДіяльностіПідприємстваBindingSource
             // 
             this.підприємстваДіяльностіПідприємстваBindingSource.DataMember = "ПідприємстваДіяльності підприємства";
@@ -1123,6 +1131,7 @@
             this.groupBox3.TabIndex = 26;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Find";
+            this.groupBox3.Visible = false;
             // 
             // textBox14
             // 
@@ -1158,6 +1167,7 @@
             this.groupBox4.TabIndex = 27;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "FindBy";
+            this.groupBox4.Visible = false;
             // 
             // maskedTextBox5
             // 
@@ -1187,6 +1197,7 @@
             this.groupBox5.TabIndex = 28;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Select";
+            this.groupBox5.Visible = false;
             // 
             // textBox16
             // 
@@ -1224,6 +1235,7 @@
             this.groupBox6.TabIndex = 29;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Filter";
+            this.groupBox6.Visible = false;
             // 
             // comboBox5
             // 
@@ -1386,11 +1398,52 @@
             this.підприємстваДіяльностіПідприємстваBindingSource1.DataMember = "ПідприємстваДіяльності підприємства";
             this.підприємстваДіяльностіПідприємстваBindingSource1.DataSource = this.підприємстваBindingSource;
             // 
+            // menuStrip2
+            // 
+            this.menuStrip2.ImageScalingSize = new System.Drawing.Size(18, 18);
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.вхідToolStripMenuItem});
+            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.Size = new System.Drawing.Size(1280, 25);
+            this.menuStrip2.TabIndex = 30;
+            this.menuStrip2.Text = "menuStrip2";
+            this.menuStrip2.Visible = false;
+            // 
+            // вхідToolStripMenuItem
+            // 
+            this.вхідToolStripMenuItem.Name = "вхідToolStripMenuItem";
+            this.вхідToolStripMenuItem.Size = new System.Drawing.Size(43, 21);
+            this.вхідToolStripMenuItem.Text = "Вхід";
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(1193, 2);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(75, 23);
+            this.button12.TabIndex = 31;
+            this.button12.Text = "Вхід";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(1193, 2);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(75, 23);
+            this.button13.TabIndex = 32;
+            this.button13.Text = "Вихід";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Visible = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
             // fEnterprises
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 784);
+            this.Controls.Add(this.button13);
+            this.Controls.Add(this.button12);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -1398,8 +1451,11 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.підприємстваDataGridView);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.підприємстваBindingNavigator);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.menuStrip2);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "fEnterprises";
             this.Text = "Підприємства";
@@ -1434,6 +1490,8 @@
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.підприємстваДіяльностіПідприємстваBindingSource1)).EndInit();
+            this.menuStrip2.ResumeLayout(false);
+            this.menuStrip2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1571,6 +1629,10 @@
         private System.Windows.Forms.ComboBox comboBox9;
         private System.Windows.Forms.ComboBox comboBox8;
         private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.MenuStrip menuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem вхідToolStripMenuItem;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
     }
 }
 

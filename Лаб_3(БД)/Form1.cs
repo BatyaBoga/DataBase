@@ -12,6 +12,7 @@ namespace Лаб_3_БД_
 {
     public partial class fEnterprises : Form
     {
+        
         public fEnterprises()
         {
             InitializeComponent();
@@ -366,6 +367,64 @@ namespace Лаб_3_БД_
         private void button11_Click(object sender, EventArgs e)
         {
             chenge_inform(sender, e, "Тип підприємства", каталог_підприємствDataSet.Тип_підприємства);
+        }
+
+        public LogForm lf = new LogForm();
+        private void button12_Click(object sender, EventArgs e)
+        {
+            lf.ShowDialog();
+            if (lf.DialogResult == DialogResult.Yes)//admin
+            {
+                menuStrip1.Enabled = true;
+                підприємстваBindingNavigator.Enabled = true;
+                groupBox1.Enabled = true;
+                groupBox2.Enabled = true;
+                groupBox3.Visible = true;
+                groupBox4.Visible = true;
+                groupBox5.Visible = true;
+                groupBox6.Visible = true;
+                button12.Visible = false;
+                button13.Visible = true;
+            }
+            if (lf.DialogResult == DialogResult.No)//user
+            {
+                menuStrip1.Enabled = false;
+                підприємстваBindingNavigator.Enabled = false;
+                groupBox1.Enabled = false;
+                groupBox2.Enabled = false;
+                groupBox3.Visible = true;
+                groupBox4.Visible = true;
+                groupBox5.Visible = true;
+                groupBox6.Visible = true;
+                button12.Visible = false;
+                button13.Visible = true;
+            }
+            if (lf.DialogResult == DialogResult.Cancel)//cancel form
+            {
+                menuStrip1.Enabled = false;
+                підприємстваBindingNavigator.Enabled = false;
+                groupBox1.Enabled = false;
+                groupBox2.Enabled = false;
+                groupBox3.Visible = false;
+                groupBox4.Visible = false;
+                groupBox5.Visible = false;
+                groupBox6.Visible = false;
+            }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            menuStrip1.Enabled = false;
+            підприємстваBindingNavigator.Enabled = false;
+            groupBox1.Enabled = false;
+            groupBox2.Enabled = false;
+            groupBox3.Visible = false;
+            groupBox4.Visible = false;
+            groupBox5.Visible = false;
+            groupBox6.Visible = false;
+            button12.Visible = true;
+            button13.Visible = false;
+
         }
     }
 }
